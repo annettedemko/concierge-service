@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, PropsWithChildren } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import ContactInfo from '@/components/ContactInfo';
 import FloatingContactButton from '@/components/FloatingContactButton';
 import Chatbot from '@/components/ui/Chatbot';
 
-const PageLayout = () => {
+type LayoutProps = PropsWithChildren<{}>;
+
+const PageLayout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -28,7 +30,8 @@ const PageLayout = () => {
   return (
     <div className="min-h-screen bg-white w-full max-w-[100vw] overflow-x-hidden">
       <Navbar />
-      <ContactInfo />
+      <main>{children}</main>
+      <ContactInfo />  {/* теперь на каждой странице */}
       <FloatingContactButton />
       <Chatbot isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
