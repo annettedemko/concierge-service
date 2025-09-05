@@ -43,23 +43,23 @@ The demo showcases a **landing page fragment** with interactive UI and service l
 
 ## 🖼️ UI Preview
 
-**Homepage**  
-![Screenshot 1](public/1.png)
+**Hero Section**  
+![Hero Section](public/1.png)
 
-**Features Section**  
-![Screenshot 2](public/2.png)
+**Hero Section + Chatbot**  
+![Hero Section + Chatbot](public/2.png)
 
-**Why Us**  
-![Screenshot 3](public/3.png)
+**What We Do For You (Features)**  
+![What We Do For You (Features)](public/3.png)
 
-**Projects**  
-![Screenshot 4](public/4.png)
+**Latest Updates (Blog Section)**  
+![Latest Updates (Blog Section)](public/4.png)
 
-**BlogPreview**  
-![Screenshot 5](public/5.png)
+**Contact Form via Tally**  
+![Contact Form via Tally](public/5.png)
 
-**Contact Section**  
-![Screenshot 6](public/6.png)
+**About Us Page**  
+![About Us Page](public/6.png)
 
 ---
 
