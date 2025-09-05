@@ -1,6 +1,6 @@
 # 💼 Concierge Service Munich (Portfolio Fragment)
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black)](https://concierge-service-flhwk.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black)](https://concierge-service-fhwk.vercel.app)
 
 > ⚠️ **Note:** This is a **fragment** of the full project (demo for portfolio purposes).  
 > Only one main page is presented here, but it includes several functional elements and integrations.
