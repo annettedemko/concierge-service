@@ -17,7 +17,7 @@ The demo showcases a **landing page fragment** with interactive UI and service l
 
 ## 🚀 Live Demo
 
-👉 [Try it on Vercel](https://concierge-service-flhwk.vercel.app)
+👉 [Try it on Vercel](https://concierge-service-fhwk.vercel.app)
 
 ---
 
@@ -60,6 +60,9 @@ The demo showcases a **landing page fragment** with interactive UI and service l
 
 **About Us Page**  
 ![About Us Page](public/6.png)
+
+**Contact Information Section**  
+![Contact Information Section](public/7.png)
 
 ---
 
