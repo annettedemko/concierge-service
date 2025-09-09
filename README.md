@@ -124,6 +124,10 @@ npm run dev
 
 ---
 
-## 📜 License
+## ⚠️ License & Usage
 
-_For portfolio/demo purposes only. Not for commercial use._
+This project was created **exclusively for portfolio purposes**.  
+It is **not licensed** for reuse, redistribution, commercial deployment, or modification.  
+Any form of unauthorized use is strictly prohibited.
+
+Designed and developed by [Hanna Demko](https://github.com/annettedemko)
