@@ -2,6 +2,7 @@ import React, { useEffect, useState, PropsWithChildren } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import ContactInfo from '@/components/ContactInfo';
+import Footer from '@/components/Footer';
 import FloatingContactButton from '@/components/FloatingContactButton';
 import Chatbot from '@/components/ui/Chatbot';
 
@@ -31,7 +32,8 @@ const PageLayout: React.FC<LayoutProps> = ({ children }) => {
     <div className="min-h-screen bg-white w-full max-w-[100vw] overflow-x-hidden">
       <Navbar />
       <main>{children}</main>
-      <ContactInfo />  {/* теперь на каждой странице */}
+      <ContactInfo />
+      <Footer />
       <FloatingContactButton />
       <Chatbot isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
