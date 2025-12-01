@@ -138,6 +138,18 @@ The chatbot requires an **OpenAI API key** to function. Follow these steps:
    - Add: `OPENAI_API_KEY` = `your-api-key`
    - Redeploy your application
 
+4. **Telegram Notifications (Optional)**:
+
+   To receive notifications in Telegram when someone uses the chatbot:
+
+   - Create a Telegram bot via [@BotFather](https://t.me/BotFather)
+   - Get your Chat ID from [@userinfobot](https://t.me/userinfobot)
+   - Add to your `.env` (local) or Vercel Environment Variables:
+     ```bash
+     TELEGRAM_BOT_TOKEN=your_bot_token_from_botfather
+     TELEGRAM_CHAT_ID=your_chat_id
+     ```
+
 ---
 
 ## ⚡ Quick Start

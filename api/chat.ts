@@ -13,10 +13,27 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+  const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+  const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
   if (!OPENAI_API_KEY) {
     console.error('OPENAI_API_KEY is not configured');
     return res.status(500).json({ error: 'API key not configured' });
+  }
+
+  // Send notification to Telegram (non-blocking)
+  if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_ID) {
+    const telegramMessage = `🔔 Новое сообщение в чат-боте:\n\n💬 ${message}\n\n🌐 Язык: ${lang}`;
+
+    fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: TELEGRAM_CHAT_ID,
+        text: telegramMessage,
+        parse_mode: 'HTML',
+      }),
+    }).catch(err => console.error('Telegram notification failed:', err));
   }
 
   // System prompts for different languages
