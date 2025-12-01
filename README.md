@@ -113,6 +113,33 @@ src/
 
 ---
 
+## 🔧 Environment Setup
+
+The chatbot requires an **OpenAI API key** to function. Follow these steps:
+
+1. **Get your OpenAI API key**:
+   - Visit [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+   - Create a new API key or use an existing one
+
+2. **Configure environment variables**:
+
+   For local development:
+   ```bash
+   # Copy the example file
+   cp .env.example .env
+
+   # Edit .env and add your API key
+   OPENAI_API_KEY=sk-your-actual-api-key-here
+   ```
+
+3. **For Vercel deployment**:
+   - Go to your Vercel project settings
+   - Navigate to **Environment Variables**
+   - Add: `OPENAI_API_KEY` = `your-api-key`
+   - Redeploy your application
+
+---
+
 ## ⚡ Quick Start
 
 ```bash
